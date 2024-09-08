@@ -1,0 +1,265 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #e6e6f2;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(7, 73, 62);
+    border-radius: 15px; /* Added rounded corners */
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    background-color: #13634b;
+    color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px 0 0 15px; /* Rounded on one side */
+}
+
+.profile-picture img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid whitesmoke;
+    box-shadow: 2px 2px 20px whitesmoke;
+    filter: drop-shadow(2px 2px 20px whitesmoke);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.contact, .skills, .languages {
+    margin-bottom: 30px;
+}
+
+.contact p, .languages p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skills .skill {
+    margin-bottom: 15px;
+}
+
+.progress {
+    background-color: #ccc;
+    height: 8px;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #20bd88;
+    height: 100%;
+}
+
+.right-section {
+    background-color: #f8f8ff;
+    color: black;
+    width: 70%;
+    padding: 40px;
+    border-radius: 0 15px 15px 0;
+}
+
+.right-section h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    color: #073832;
+}
+
+.right-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hobby-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #073832;
+}
+
+.hobbies .hobby-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* Form Styles */
+.form-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.open-form-btn {
+    padding: 10px 20px;
+    background-color: #0a4738;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-popup {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content label {
+    margin-top: 10px;
+}
+
+.form-content input, .form-content textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn, .close-btn {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #063a32;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* CV Styles */
+#generated-cv {
+    margin-top: 30px;
+    background-color: #f8f8ff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#generated-cv h1, #generated-cv h4, #generated-cv p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-content, #generated-cv {
+        width: 100%;
+    }
+}
+/* Form Styles */
+.form-container {
+    margin-top: 30px;
+    text-align: center;
+}
+.open-form-btn {
+    padding: 10px 20px;
+    background-color: #0a4738;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.form-popup {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+.form-content label {
+    margin-top: 10px;
+    color: #073832;
+}
+h3{
+    color: #073832;
+}
+
+.form-content input, .form-content textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    font-size: 14px;
+}
+
+.form-content textarea {
+    resize: vertical;
+}
+
+.submit-btn, .close-btn {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #063a32;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; 
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        border-radius: 15px; 
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px; 
+    }
+
+    .right-section {
+        padding-top: 0;
+    }
+}
